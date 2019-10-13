@@ -1,0 +1,45 @@
+.Player {
+  display: flex;
+  justify-content: space-around;
+  background: #494545;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Player__name {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.Player__score {
+  width: 25%;
+}
+
+.Player__button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #ddd;
+  color: #000;
+  margin-right: 10px;
+}
+
+.Player__button:hover {
+  background-color: #494545;
+  color: #fff;
+}
+
+.btn__plusminus {
+  width: 30px;
+  padding-top: 0;
+  font-size: 14px;
+}
+
+.btn__remove {
+  padding: 0 10px;
+  font-family: Open Sans;
+}
