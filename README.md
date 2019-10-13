@@ -1,0 +1,1 @@
+# 32.6-react_component_testing
