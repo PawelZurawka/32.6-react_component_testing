@@ -8,8 +8,7 @@ class App extends Component {
     super();
 
     this.state = {
-      players: [],
-      show: false
+      players: []
     };
   }
   onScoreUpdate = (playerIndex, scoreChange) => {
@@ -30,8 +29,7 @@ class App extends Component {
     playerName === ''
       ? alert('Please enter player name!')
       : this.setState({
-          players: [...this.state.players, newPlayer],
-          show: true
+          players: [...this.state.players, newPlayer]
         });
   };
 
@@ -48,14 +46,12 @@ class App extends Component {
       <div className='App'>
         <h1 className='App__title'>Scorekeeper React App</h1>
         <AddPlayer onPlayerAdd={this.onPlayerAdd} />
-        {this.state.show ? (
+        {this.state.players.length > 0 && (
           <PlayersList
             players={this.state.players}
             onScoreUpdate={this.onScoreUpdate}
             onPlayerRemove={this.onPlayerRemove}
           />
-        ) : (
-          ''
         )}
       </div>
     );

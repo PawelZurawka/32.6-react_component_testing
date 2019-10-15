@@ -12,6 +12,7 @@
 .Player__name {
   width: 50%;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 
 .Player__score {
